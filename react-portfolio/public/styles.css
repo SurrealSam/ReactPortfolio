@@ -1,0 +1,14 @@
+body {
+    background-image: url("https://backgrounddownload.com/wp-content/uploads/2018/09/best-background-images-for-professional-websites-5.jpg");
+}
+
+
+
+.ui.medium.circular:hover  {
+    box-shadow:  
+    0 0 5px 5px hsl(187, 62%, 35%);
+    
+    
+}
+
+  
