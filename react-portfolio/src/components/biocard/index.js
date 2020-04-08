@@ -11,14 +11,8 @@ const BioCard = () => (
         <span className='date'></span>
       </Card.Meta>
       <Card.Description>
-        Matthew is a musician living in Nashville.
+      At heart, I am a linguist. I having studied various human languages (Spanish, American Sign Language, Japanese, German, French, and Mandarin), and I love learning new languages. This passion has led me to learning programming languages as well. I enjoy rockclimbing and board gaming in my free time!
       </Card.Description>
-    </Card.Content>
-    <Card.Content extra>
-      <a>
-        <Icon name='user' />
-        22 Friends
-      </a>
     </Card.Content>
   </Card>
 )

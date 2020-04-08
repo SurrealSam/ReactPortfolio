@@ -1,14 +1,78 @@
 body {
-    background-image: url("https://backgrounddownload.com/wp-content/uploads/2018/09/best-background-images-for-professional-websites-5.jpg");
+    background: url("https://backgrounddownload.com/wp-content/uploads/2018/09/best-background-images-for-professional-websites-5.jpg") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    
+}
+.ui.segment {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.description {
+    font-size: 20px;
+}
+.big.bordered.inverted.icon {
+    
+    position: relative;
+    font-size: 30px;
+    vertical-align: text-top;
+    top: -13px;
+    right: -25px;
+}
+.black.github.square.big.bordered.inverted.icon {
+ right: -50px;
+}
+.teal.mail.big.bordered.inverted.icon {
+    
+    right: -78px;
+    
+}
+.ui.segment {
+    border-style: inset;
+  border-width: 5px;
+  border-top-color: white;
+  border-left-color: lightblue;
+  border-right-color: lightblue;
+  border-bottom-color: gray;
+}
+.ui.card {
+    border-style: inset;
+  border-width: 5px;
+  border-top-color: white;
+  border-left-color: lightblue;
+  border-right-color: lightblue;
+  border-bottom-color: gray;
 }
 
-
+.ui.medium.circular {
+    /* border: 10px inset orangered; */
+    border-style: inset;
+  border-width: 5px;
+  border-top-color: white;
+  border-left-color: lightblue;
+  border-right-color: lightblue;
+  border-bottom-color: gray;
+}
 
 .ui.medium.circular:hover  {
     box-shadow:  
-    0 0 5px 5px hsl(187, 62%, 35%);
+    0 0 5px 3px hsl(184, 100%, 51%);
     
     
 }
+@media only screen and (max-width: 600px) {
+    body {
+        background: url("https://backgrounddownload.com/wp-content/uploads/2018/09/best-background-images-for-professional-websites-5.jpg") center center fixed;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+  }
 
   

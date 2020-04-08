@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Button, Dimmer, Header, Divider, Image } from 'semantic-ui-react'
 
 
+
 class ProjectContainer extends Component {
     state = {}
 
@@ -16,8 +17,8 @@ class ProjectContainer extends Component {
                     {this.props.title}
           </Header>
 
-                <Button primary>View App</Button>
-                <Button secondary>View Github</Button>
+                <a href={this.props.appsrc}><Button  circular inverted color='teal'>View App</Button></a>
+                <a href={this.props.codesrc}><Button circular inverted color='grey'>View Github</Button></a>
 
             </div>
         )

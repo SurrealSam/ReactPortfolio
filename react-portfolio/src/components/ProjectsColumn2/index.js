@@ -1,24 +1,18 @@
 import React from 'react'
 import ProjectContainer from "../project_container";
+import covid from "../images/covid.PNG"
 
 
 
 const ProjectsColumn2 = () => (
     <div>
         <ProjectContainer
-        imgsrc= 'https://uptownpuppies.com/wp-content/themes/mega-theme/images/dachshund5.jpg'
-        link = "https://www.youtube.com/"
-        title = "Youtube"
+        imgsrc= {covid}
+        appsrc = "http://blooming-tor-47379.herokuapp.com/"
+        codesrc = "https://github.com/alpinelife37/Covid-Daily"
+        title = "Covid Daily"
          />
-        <ProjectContainer
-        imgsrc= 'https://uptownpuppies.com/wp-content/themes/mega-theme/images/dachshund5.jpg'
-        link = "https://www.youtube.com/"
-        title = "Youtube"
-         /><ProjectContainer
-         imgsrc= 'https://uptownpuppies.com/wp-content/themes/mega-theme/images/dachshund5.jpg'
-         link = "https://www.youtube.com/"
-         title = "Youtube"
-          />
+        
     </div>
 )
 

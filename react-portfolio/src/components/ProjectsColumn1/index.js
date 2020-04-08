@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectContainer from "../project_container";
 import dayplanner from "../images/dayplanner.PNG"
-import square from "../images/square.png"
+import weather from "../images/weather.PNG"
 
 
 
@@ -9,18 +9,16 @@ const ProjectsColumn1 = () => (
     <div>
         <ProjectContainer
         imgsrc= {dayplanner}
-        link = "https://www.youtube.com/"
-        title = "Youtube"
+        appsrc = "https://surrealsam.github.io/week5homework/"
+        codesrc = "https://github.com/SurrealSam/week5homework"
+        title = "Day Planner"
          />
         <ProjectContainer
-        imgsrc= {square}
-        link = "https://www.youtube.com/"
-        title = "Youtube"
-         /><ProjectContainer
-         imgsrc= 'https://thehappypuppysite.com/wp-content/uploads/2018/04/when-can-puppies-go-outside-header.jpg'
-         link = "https://www.youtube.com/"
-         title = "Youtube"
-          />
+        imgsrc= {weather}
+        appsrc = "https://surrealsam.github.io/week6homework/"
+        codesrc = "https://github.com/SurrealSam/week6homework"
+        title = "Weather App"
+         />
     </div>
 )
 

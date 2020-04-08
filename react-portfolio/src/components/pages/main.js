@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { Menu, Segment } from 'semantic-ui-react'
+import { Menu } from 'semantic-ui-react'
 import ProjectsPage from "./projects";
 import ContactPage from "../contact";
-import BioPage from "../pages/bio"
+import BioPage from "../pages/bio";
 
 
 class MainPage extends Component {
@@ -16,7 +16,7 @@ class MainPage extends Component {
         if (this.state.activeItem === 'Projects') {
             return (
                 <div>
-                    <Menu pointing secondary>
+                    <Menu size='massive' pointing secondary>
                         <Menu.Item
                             name='Bio'
                             active={activeItem === 'Bio'}
@@ -32,27 +32,22 @@ class MainPage extends Component {
                             active={activeItem === 'Contact'}
                             onClick={this.handleItemClick}
                         />
-                        <Menu.Menu position='right'>
-                            <Menu.Item
-                                name='logout'
-                                active={activeItem === 'logout'}
-                                onClick={this.handleItemClick}
-                            />
-                        </Menu.Menu>
+                        
                     </Menu>
-    
-                    <ProjectsPage/>
+
+                    <ProjectsPage />
                 </div>
             )
         }
         if (this.state.activeItem === 'Contact') {
             return (
                 <div>
-                    <Menu pointing secondary>
+                    <Menu size='massive' pointing secondary>
                         <Menu.Item
                             name='Bio'
                             active={activeItem === 'Bio'}
                             onClick={this.handleItemClick}
+                            color='teal'
                         />
                         <Menu.Item
                             name='Projects'
@@ -64,23 +59,17 @@ class MainPage extends Component {
                             active={activeItem === 'Contact'}
                             onClick={this.handleItemClick}
                         />
-                        <Menu.Menu position='right'>
-                            <Menu.Item
-                                name='logout'
-                                active={activeItem === 'logout'}
-                                onClick={this.handleItemClick}
-                            />
-                        </Menu.Menu>
+                        
                     </Menu>
-    
-                    <ContactPage/>
+
+                    <ContactPage />
                 </div>
             )
         }
         if (this.state.activeItem === 'Bio') {
             return (
                 <div>
-                    <Menu pointing secondary>
+                    <Menu size='massive' pointing secondary>
                         <Menu.Item
                             name='Bio'
                             active={activeItem === 'Bio'}
@@ -96,16 +85,10 @@ class MainPage extends Component {
                             active={activeItem === 'Contact'}
                             onClick={this.handleItemClick}
                         />
-                        <Menu.Menu position='right'>
-                            <Menu.Item
-                                name='logout'
-                                active={activeItem === 'logout'}
-                                onClick={this.handleItemClick}
-                            />
-                        </Menu.Menu>
+                        
                     </Menu>
-    
-                    <BioPage/>
+
+                    <BioPage />
                 </div>
             )
         }
