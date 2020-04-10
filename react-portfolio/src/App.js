@@ -12,14 +12,15 @@ import MenuHeader from "../src/components/menuheader";
 import './App.css';
 
 function App() {
-  
+
   return (
     <Router>
       <MenuHeader />
       <Switch>
       <Route exact path="/Projects" component={ProjectsPage} />
       <Route exact path="/Contact" component={ContactPage} />
-      <Route path="/Bio" component={BioPage} />
+      <Route exact path="/Bio" component={BioPage} />
+      <Route path="/" component={BioPage} />
       </Switch>
     </Router>
 
