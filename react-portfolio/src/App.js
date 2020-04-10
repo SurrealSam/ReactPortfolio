@@ -1,16 +1,28 @@
 import React from 'react';
-import MainPage from "./components/pages/main";
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import ProjectsPage from "./components/projects";
+import ContactPage from "./components/contact";
+import BioPage from "./components/biocard";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import MenuHeader from "../src/components/menuheader";
 
 import './App.css';
 
 function App() {
+  
   return (
-    <div>
-      <Router>
-    <Route exact path="/" component={MainPage} />
+    <Router>
+      <MenuHeader />
+      <Switch>
+      <Route exact path="/Projects" component={ProjectsPage} />
+      <Route exact path="/Contact" component={ContactPage} />
+      <Route path="/Bio" component={BioPage} />
+      </Switch>
     </Router>
-    </div>
+
   );
 }
 
